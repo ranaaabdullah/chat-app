@@ -4,6 +4,7 @@ import dotenv from 'dotenv'
 
 
 import authRoutes from './routes/auth.js'
+import messageRoutes from "./routes/message.js";
 import connectMongoDb from './db/connectMongoDb.js'
 
 const app = express()
@@ -17,6 +18,7 @@ app.use(express.json());
 
 
 app.use("/api/auth", authRoutes)
+app.use("/api/messages", messageRoutes)
 
 // app.get('/', (req, res) => {
 //     res.send("Hello World")
