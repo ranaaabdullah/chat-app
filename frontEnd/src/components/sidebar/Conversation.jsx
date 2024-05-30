@@ -10,7 +10,6 @@ const Conversation = ({ conversation, lastIdx, emoji }) => {
 
 	const isOnline = onlineUsers.includes(conversation._id);
 
-	console.log(isOnline)
 	return (
 		<>
 			<div

@@ -10,7 +10,6 @@ const Messages = () => {
 	// useListenMessages();
 	const lastMessageRef = useRef();
 
-	console.log(messages)
 	useEffect(() => {
 		setTimeout(() => {
 			lastMessageRef.current?.scrollIntoView({ behavior: "smooth" });

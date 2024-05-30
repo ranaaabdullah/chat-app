@@ -16,7 +16,6 @@ export const SocketContextProvider = ({ children }) => {
 
 
 
-	console.log(onlineUsers)
 
 	useEffect(() => {
 		if (authUser) {

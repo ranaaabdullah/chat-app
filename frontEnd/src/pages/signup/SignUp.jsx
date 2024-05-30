@@ -22,7 +22,6 @@ const SignUp = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     await signup(inputs);
-    console.log(okk);
     if (okk) {
       navigate("/login");
     }
